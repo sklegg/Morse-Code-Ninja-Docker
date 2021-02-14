@@ -15,6 +15,9 @@ RUN cpanm Log::Log4perl Getopt::Long Getopt::ArgvFile
 # download the project and unpack zip
 RUN wget https://github.com/sklegg/Morse-Code-Ninja/archive/main.zip -P /opt && cd /opt && unzip main.zip && mkdir cache
 
+# download the site project
+RUN wget https://github.com/sklegg/Morse-Code-Ninja-Site/archive/master.zip -P /opt && cd /opt && unzip master.zip
+
 # alias python to python3
 RUN ln -s /usr/bin/python3 /usr/bin/python
 
