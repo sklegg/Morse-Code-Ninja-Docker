@@ -28,4 +28,4 @@ RUN ln -s /usr/bin/python3 /usr/bin/python
 RUN npm install express
 
 # run the site server
-# CMD ["node", "/opt/ninja/app/app.js"]
+CMD ["node", "/opt/ninja/app/app.js"]
