@@ -7,6 +7,7 @@ Environment variables can be set when this container is started to allow the scr
 
 * AWS_KEY_ID: AWS IAM access key ID 
 * AWS_SECRET_ACCESS_KEY: AWS IAM secret access key 
+* AWS_SESSION_TOKEN: optional, used by the AWS client if the IAM creds are temporary
 * NINJA_BUCKET_NAME: the name of the S3 bucket used to store the results
 
 
