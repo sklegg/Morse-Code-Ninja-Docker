@@ -30,6 +30,14 @@ It is not recommended to use your root account credentials for this application.
 *See also https://github.com/zoglmannk/Morse-Code-Ninja for more information on AWS setup.*
 
 
+## Building
+1. Clone the Morse-Code-Ninja and Morse-Code-Ninja-Site projects.
+2. Copy the files from both directories to the same directory as the Dockerfile from this repository.
+3. Run the docker build command
+   1. `docker build -t <tag:revision> .`
+   2. Wait 800.3 seconds...
+
+
 ## Running
 1. `docker run -it --env AWS_KEY_ID=SECRET --env AWS_SECRET_ACCESS_KEY=SECRET --env NINJA_BUCKET_NAME=SECRET -p 3000:3000 sklegg/morsecodeninja` will pull the image down to your machine and start it in interactive mode. 
 
